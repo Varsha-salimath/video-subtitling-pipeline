@@ -162,38 +162,3 @@ output/video_subtitled.mp4
 
 </div>
 ```
-
----
-
-# 🔥 WHY THIS FIXES YOUR PROBLEM
-
-Your new README will:
-
-✅ Be **centered at top (clean look)**
-✅ Have **clear sections (not messy text)**
-✅ Look like a **real production project**
-✅ Be **easy for recruiters to scan** ([Fabreco Studio][1])
-
----
-
-# 🎯 Small extra tip (VERY important)
-
-After pasting:
-
-👉 Click **Preview** tab (top left in GitHub editor)
-
-If it looks clean → then:
-
-👉 Click **Commit changes**
-
----
-
-# 💬 Next level (optional)
-
-If you want it EVEN better:
-
-* Add demo video 🎥
-* Add badges (stars, license)
-* Add screenshot
-
----
