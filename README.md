@@ -1,146 +1,199 @@
-# 🎬 Automated Video Subtitling Pipeline
+<div align="center">
 
-Turn any video into a fully subtitled video — automatically.  
-This project uses **OpenAI Whisper + FFmpeg** to generate accurate subtitles and embed them directly into videos.
+# 🎬 Video Subtitling Pipeline
+
+### ⚡ Turn any video into a fully subtitled video automatically
+
+<p>
+Built using <b>Python</b> • <b>FFmpeg</b> • <b>OpenAI Whisper</b>
+</p>
+
+</div>
 
 ---
 
-## 🚀 What This Project Does
+## 🚀 Overview
 
-This pipeline automates the complete subtitling process:
-Video → Audio → Speech-to-Text → SRT → Final Subtitled Video
+This project is an **end-to-end automated video subtitling system**.
 
-No manual work. Just drop videos and run.
+It takes a video as input, extracts audio, converts speech into text using AI, generates subtitle files, and embeds them back into the video — completely automatically.
+
+---
+
+## 🔄 Pipeline Flow
+
+```
+
+Video → Audio Extraction → Whisper Transcription → SRT Generation → Final Subtitled Video
+
+```
 
 ---
 
 ## ✨ Features
 
-- 🎧 Extracts audio from video using FFmpeg  
-- 🧠 Converts speech to text using Whisper (AI)  
-- 📝 Generates properly formatted `.srt` subtitle files  
-- 🎬 Burns subtitles into the video  
-- 📂 Supports batch processing (multiple videos at once)  
-- ⚡ Fully automated pipeline  
+- 🎧 Extracts audio from videos using FFmpeg  
+- 🧠 Converts speech to text using Whisper AI  
+- 📝 Generates accurate `.srt` subtitle files  
+- 🎬 Burns subtitles directly into video  
+- 📂 Supports multiple videos (batch processing)  
+- ⚡ Fully automated workflow  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **FFmpeg**
-- **OpenAI Whisper (local model)**
-- `subprocess`, `tqdm`, `argparse`
+- Python  
+- FFmpeg  
+- OpenAI Whisper (Local Model)  
+- subprocess, tqdm, argparse  
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
+
+```
+
 video-subtitling-pipeline/
 │
-├── input/ # Place your videos here
-├── output/ # Final subtitled videos
-├── temp/ # Temporary processing files
+├── input/
+├── output/
+├── temp/
 │
 ├── my_utils/
-│ ├── audio.py # Audio extraction
-│ ├── transcribe.py # Whisper transcription
-│ ├── srt_generator.py# Subtitle generation
-│ └── video.py # Subtitle embedding
+│   ├── audio.py
+│   ├── transcribe.py
+│   ├── srt_generator.py
+│   └── video.py
 │
-├── main.py # Main pipeline
+├── main.py
 ├── requirements.txt
 └── README.md
 
+````
+
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup
 
-### 1️⃣ Install dependencies
-
+### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
-2️⃣ Install FFmpeg
+````
 
-Download and add FFmpeg to PATH
-Verify:ffmpeg -version
-3️⃣ Run the pipeline
-python main.py
-📌 Usage
+### 2. Install FFmpeg
 
-Add videos to:
+Make sure FFmpeg is installed and added to PATH:
 
+```bash
+ffmpeg -version
+```
+
+---
+
+## ▶️ Usage
+
+1. Add videos to:
+
+```
 input/
+```
 
-Run the script:
+2. Run:
 
+```bash
 python main.py
+```
 
-Get results in:
+3. Output will be saved in:
 
+```
 output/
-💡 Example
+```
 
-Input:
+---
 
+## 💡 Example
+
+**Input:**
+
+```
 input/video.mp4
+```
 
-Output:
+**Output:**
 
+```
 output/video_subtitled.mp4
-🧠 Key Learnings
+```
 
-Handling real-world file paths (Windows issues)
+---
 
-Integrating external tools (FFmpeg with Python)
+## 🧠 Key Learnings
 
-Building end-to-end automation pipelines
+* Real-world file handling in Windows
+* Integrating external tools (FFmpeg + Python)
+* Building AI-powered pipelines
+* Debugging environment & path issues
+* Managing temporary processing files
 
-Managing temporary files efficiently
+---
 
-Debugging system-level errors (PATH, subprocess)
+## ⚠️ Notes
 
-⚠️ Notes
+* 💸 No cost — uses local Whisper model
+* ⚡ Performance depends on CPU
+* ⏳ Large videos take more time
 
-Uses local Whisper model → No API cost 💸
+---
 
-Processing speed depends on your CPU
+## 🚀 Future Improvements
 
-Large videos may take longer
+* GUI interface (drag & drop)
+* Multi-language subtitles
+* Faster processing (parallel execution)
+* Subtitle styling options
 
-🚀 Future Improvements
+---
 
-🔥 Add GUI (drag & drop interface)
+<div align="center">
 
-🌍 Multi-language subtitle support
+### ⭐ If you like this project, give it a star!
 
-⚡ Parallel processing for faster batch execution
+</div>
+```
 
-🎨 Subtitle styling (fonts, colors)
+---
 
-💼 Use Cases
+# 🔥 WHY THIS FIXES YOUR PROBLEM
 
-Content creators (YouTube, Instagram)
+Your new README will:
 
-Online courses
+✅ Be **centered at top (clean look)**
+✅ Have **clear sections (not messy text)**
+✅ Look like a **real production project**
+✅ Be **easy for recruiters to scan** ([Fabreco Studio][1])
 
-Accessibility (hearing-impaired users)
+---
 
-Video automation pipelines
+# 🎯 Small extra tip (VERY important)
 
-⭐ Why This Project Stands Out
+After pasting:
 
-This is not just a script — it’s a complete AI-powered automation system combining:
+👉 Click **Preview** tab (top left in GitHub editor)
 
-Machine Learning (Whisper)
+If it looks clean → then:
 
-System Integration (FFmpeg)
+👉 Click **Commit changes**
 
-Backend Engineering (Python pipeline)
+---
 
-👩‍💻 Author
+# 💬 Next level (optional)
 
-Varsha Salimath
+If you want it EVEN better:
 
-⭐ If you like this project
+* Add demo video 🎥
+* Add badges (stars, license)
+* Add screenshot
 
-Give it a ⭐ on GitHub!
+---
